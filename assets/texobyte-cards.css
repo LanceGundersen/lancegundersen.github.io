@@ -1,0 +1,32 @@
+body {
+    background-color: #BFD7D9;
+}
+
+.wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header header header" "nav content ." "footer footer footer";
+    grid-template-columns: 150px 1fr 150px;
+}
+
+.card {
+    grid-template-areas: "content";
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+    align-self: center;
+}
+
+.content {
+    grid-area: content;
+    background-color: #ffffff;
+}
+
+footer {
+    grid-area: footer;
+}

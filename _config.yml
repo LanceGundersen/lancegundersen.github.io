@@ -1,0 +1,76 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Texobyte
+email: lance@texobyte.com
+description: >- # this means to ignore newlines until "baseurl:"
+  I'm a front end developer & designer from Eastern Connecticut. I'm almost
+  finished with my B.S. in Computer Science and work at a MIKEL, Inc. in Newport, RI.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+google_analytics_tracking_id: # UA-000000000-0 via https://analytics.google.com
+cookies_banner: true
+cookie_accept_banner: Thank you!
+
+# Social Accounts 
+# Credit to Aleksandar Todorović over at https://blog.r3bl.me/en/simple-social-media-links-jekyll/
+twitter_username: r3bl_
+github_username: lancegundersen
+linkedin_username: lancegundersen
+google_plus_username: 
+facebook_username:
+dribbble_username:
+
+# Resume
+# It's expected to live in the site root directory. If not then you will need to modify
+# the url either here or on the social.html page.
+resume: lancegundersen.pdf
+
+# Home Page
+name: Lance Gundersen
+home_intro:
+  Lately I have been flexing all aspects of what a designer and front end developer does
+  along with project management, user strategy and even a bit of DEVOPS work. I enjoy
+  interacting with the customer to bring their visions to life with user focused applications
+  and user interfaces.  
+  <br />
+  <br />
+  In my previous life I was in the Navy on submarines I have to admit it was pretty cool and I
+  learned quite a bit I found I enjoyed creating web things more. All in all it helps keep me 
+  grounded to whats important in life and in my work along with leveling up my ability to handle
+  stress!
+video_header: Cool Submarine Video
+video_description: 
+  It's hard to explain what I used to do in the Navy so I'll let this cool video help do the
+  explaining!
+
+# Build settings
+markdown: kramdown
+livereload: true 
+plugins:
+  - jekyll-feed
+  - jekyll-livereload
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

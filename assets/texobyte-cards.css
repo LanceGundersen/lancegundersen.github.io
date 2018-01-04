@@ -1,16 +1,26 @@
+:root {
+    --white: #ffffff;
+    --seafom-green: #BFD7D9;
+    --bright-blue: #1F84CF;
+}
+
 body {
-    background-color: #BFD7D9;
+    background-color: var(--seafom-green);
+    font-family: sans-serif;
 }
 
 .wrapper {
     display: grid;
-    width: 100%;
     grid-template-areas: "header header header" "nav content ." "footer footer footer";
     grid-template-columns: 150px 1fr 150px;
 }
 
-.card {
-    grid-template-areas: "content";
+.content {
+    grid-area: content;
+    display: grid;
+    grid-template-areas: "card-title card-image card-content";
+    grid-template-columns: 100px 1fr 2fr;
+    background-color: var(--white);
 }
 
 .header {
@@ -22,9 +32,48 @@ body {
     align-self: center;
 }
 
-.content {
-    grid-area: content;
-    background-color: #ffffff;
+.card-title {
+    grid-area: card-title;
+    align-self: center;
+    transform: rotate(-90deg);
+}
+
+.card-image {
+    grid-area: card-image;
+    background-image: url("http://via.placeholder.com/600x1200");
+    background-position: center center;
+}
+
+.card-content {
+    grid-area: card-content;
+    display: grid;
+}
+
+.card-intro {
+    position: relative;
+    height: 100px;
+    background-color: var(--bright-blue);
+}
+
+.card-intro>span {
+    position: absolute;
+    bottom: -16px;
+    left: 5%;
+    font-size: 4em;
+    font-weight: bolder;
+    color: var(--white);
+}
+
+.card-social {
+    justify-self: end;
+}
+
+.card-social>ul {
+    list-style: none;
+}
+
+.card-social>ul>li {
+    display: inline;
 }
 
 footer {

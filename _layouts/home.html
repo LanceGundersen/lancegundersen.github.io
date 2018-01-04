@@ -15,9 +15,10 @@
     </div>
 
     <div class="content">
-        <div class="card-title"></div>
+        <div class="card-title"><span><</span> About Me <span>/></span></div>
+        <div class="card-image"></div>
         <div class="card-content">
-            <div class="card-intro">{{ site.name }}</div>
+            <div class="card-intro"><span>{{ site.name }}</span></div>
             <div class="card-social">
                 <ul>{% include social.html %}</ul>
             </div>
@@ -25,7 +26,7 @@
                 <strong>{{ site.description }}</strong>
                 <p>{{ site.home_intro }}</p>
                 <div class="card-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/d6EXQTSlu_0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    <iframe width="200" height="175" src="https://www.youtube.com/embed/d6EXQTSlu_0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                     <strong>{{ site.video_header }}</strong>
                     <p>{{ site.video_description }}</p>
                 </div>
